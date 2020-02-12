@@ -1,0 +1,15 @@
+<div class="clear"></div>
+<div class="container">
+  <div class="fullWidth makeMargin">
+    <div class="deleteDiv">
+      <button mat-raised-button [ngClass]="showSpinner ? 'disabledBtn' : ''" class="activeBtn"
+        (click)="deleteData()">{{'Delete'}}
+        <mat-icon *ngIf="showSpinner">
+          <mat-spinner diameter="20"></mat-spinner>
+        </mat-icon>
+      </button>
+      <button mat-raised-button class="cancelBtn" [routerLink]="['/home/']">{{'Cancel'}}</button>
+    </div>
+  </div>
+</div>
+<div class="clear"></div>

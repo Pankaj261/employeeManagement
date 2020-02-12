@@ -1,0 +1,19 @@
+<div class="clear"></div>
+<div class="container">
+    <div class="fullWidth makeMargin">
+        <div class="threeDivs marginTop marginBottom" *ngFor="let data of myData">
+            <mat-card class="myCustomBackground">
+                <a class="pullRight actionDiv" (click)="data.showThis = !data.showThis">:</a>
+                <p>{{data.employee_name}}</p>
+                <p>{{'Salary'}}: {{data.employee_salary}}</p>
+                <p>{{'Age'}}: {{data.employee_age}}</p>
+                <div class="triggerMenu" *ngIf="data.showThis">
+                    <p (click)="passUpdate(data)">Update</p>
+                    <p (click)="deleteData(data.id)">Delete</p>
+                </div>
+            </mat-card>
+        </div>
+    </div>
+    <button class="createBtn" [routerLink]="['/create/']">+</button>
+</div>
+<div class="clear"></div>

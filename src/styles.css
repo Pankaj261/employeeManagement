@@ -1,0 +1,172 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-card{
+    border-radius: 0px !important;
+}
+
+.myCustomBackground{
+    background: #fff;
+    color: #424242;
+    font-size: 12px;
+}
+
+mat-form-field{
+    font-size: 12px !important;
+}
+
+div.marginTop{
+    margin-top: 10px;
+}
+
+.pullRight{
+    float: right;
+}
+
+span.cursorPointer{
+    cursor: pointer;
+}
+
+button.createBtn{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 1;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    outline: none;
+    border: none;
+    background: #fff;
+    font-size: 40px;
+    cursor: pointer;
+    box-shadow: 0 2px 1px -1px rgba(43, 38, 38, 0.32), 0 1px 9px 0 rgba(34, 28, 28, 0.14), 0 1px 3px 0 rgba(31, 18, 18, 0.12);
+}
+
+span.cursorPointer:focus{
+    outline: none;
+}
+
+.pullLeft{
+    float: left;
+}
+
+.example-form {
+    width: 40%;
+    margin: 0 auto;
+    box-shadow: 0 2px 1px -1px rgba(43, 38, 38, 0.32), 0 1px 9px 0 rgba(34, 28, 28, 0.14), 0 1px 3px 0 rgba(31, 18, 18, 0.12);
+}
+
+@media screen and (max-width: 767px) {
+    .example-form {
+        width: 90%;
+    }
+  }
+  
+.example-full-width {
+    width: 100%;
+}
+
+.pullRight{
+    float: right;
+}
+
+div.triggerMenu{
+    position: absolute;
+    top: 30px;
+    padding: 10px;
+    right: 25px;
+    background: #fff;
+    width: 80px;
+    color: #424242;
+    cursor: pointer;
+    box-shadow: 0 2px 1px -1px rgba(43, 38, 38, 0.32), 0 1px 9px 0 rgba(34, 28, 28, 0.14), 0 1px 3px 0 rgba(31, 18, 18, 0.12);
+}
+
+.deleteDiv{
+    width: 40%;
+    margin: 0 auto;
+    box-shadow: 0 2px 1px -1px rgba(43, 38, 38, 0.32), 0 1px 9px 0 rgba(34, 28, 28, 0.14), 0 1px 3px 0 rgba(31, 18, 18, 0.12);
+}
+
+div.triggerMenu p:hover{
+    background: #f3f3f3;
+    padding: 5px;
+}
+
+a.actionDiv{
+    width: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+p{
+    margin: 0 !important;
+}
+
+.marginBottom{
+    margin-bottom: 10px;
+}
+
+div.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+div.clear{
+    clear: both;
+}
+
+button.activeBtn{
+    background: #424242;
+    color: #fff;
+    border-radius: 0px;
+    box-shadow: none !important;
+}
+
+button.cancelBtn{
+    background: #fff;
+    color: #333;
+    border-radius: 0px;
+    box-shadow: none !important;
+}
+
+button.disabledBtn{
+    background: #ddd;
+    pointer-events: none;
+    border-radius: 0px;
+    box-shadow: none !important;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-underline {
+    background-color: #424242;
+}
+
+span.mat-placeholder-required.mat-form-field-required-marker{
+    color: #ff0000 !important;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-label{
+    color: #424242;
+}
+
+.makePadding{
+    padding: 10px;
+}
+
+.makeMargin{
+    margin: 10px;
+}
+
+div.fullWidth{
+    width: 100%;
+    float: left;
+}
+
+div.threeDivs{
+    width: calc(33% - 10px);
+    float: left;
+    margin-left: 10px;
+}

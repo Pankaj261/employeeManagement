@@ -1,0 +1,64 @@
+<div class="clear"></div>
+<div class="container">
+  <div class="fullWidth makeMargin">
+    <form class="example-form makePadding" [formGroup]="createUser" (ngSubmit)="createNewUser()" autocomplete="off">
+      <mat-form-field class="example-full-width">
+        <mat-label>{{'Name'}}</mat-label>
+        <input matInput placeholder="Name" value="" formControlName="name" required>
+        <mat-error *ngIf="hasError('name', 'pattern')">
+          {{'Name should be in Alphabets only'}}
+        </mat-error>
+        <mat-error *ngIf="hasError('name', 'required')">
+          {{'Name is'}} <strong>{{'required'}}</strong>
+        </mat-error>
+        <mat-error *ngIf="hasError('name', 'minlength')">
+          {{'Name must be atleast'}} <strong>{{ nameMinLength }}</strong> {{'character long'}}
+        </mat-error>
+        <mat-error *ngIf="hasError('name', 'maxlength')">
+          {{'Name not more than then'}} <strong>{{ nameMaxLength }}</strong> {{'length'}}
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>{{'Salary'}}</mat-label>
+        <input matInput placeholder="Salary" value="" formControlName="salary" required>
+        <mat-error *ngIf="hasError('salary', 'pattern')">
+          {{'Salary should be in Numbers only'}}
+        </mat-error>
+        <mat-error *ngIf="hasError('salary', 'required')">
+          {{'Salary is'}} <strong>{{'required'}}</strong>
+        </mat-error>
+        <mat-error *ngIf="hasError('salary', 'minlength')">
+          {{'Salary must be atleast'}} <strong>{{ salaryMinLength }}</strong> {{'character long'}}
+        </mat-error>
+        <mat-error *ngIf="hasError('salary', 'maxlength')">
+          {{'Salary not more than then'}} <strong>{{ salaryMaxLength }}</strong> {{'length'}}
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width marginBottom">
+        <mat-label>{{'Age'}}</mat-label>
+        <input matInput placeholder="Age" value="" formControlName="age" required>
+        <mat-error *ngIf="hasError('age', 'pattern')">
+          {{'Age should be in Numbers only'}}
+        </mat-error>
+        <mat-error *ngIf="hasError('age', 'required')">
+          {{'Age is'}} <strong>{{'required'}}</strong>
+        </mat-error>
+        <mat-error *ngIf="hasError('age', 'minlength')">
+          {{'Age must be atleast'}} <strong>{{ ageMinLength }}</strong> {{'character long'}}
+        </mat-error>
+        <mat-error *ngIf="hasError('age', 'maxlength')">
+          {{'Age not more than then'}} <strong>{{ ageMaxLength }}</strong> {{'length'}}
+        </mat-error>
+      </mat-form-field>
+      <button mat-raised-button [ngClass]="showSpinner ? 'disabledBtn' : ''" class="activeBtn"
+        *ngIf="createUser.valid">{{'Create'}}
+        <mat-icon *ngIf="showSpinner">
+          <mat-spinner diameter="20"></mat-spinner>
+        </mat-icon>
+      </button>
+    </form>
+  </div>
+</div>
+<div class="clear"></div>
